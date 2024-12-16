@@ -1,79 +1,60 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Kullanıcı Yönetim Uygulaması
 
-# Getting Started
+Bu proje, **React Native** kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Kullanıcı listesi, detay sayfaları, kullanıcı silme ve düzenleme işlemleri ile yeni kullanıcı ekleme işlemleri gibi temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirebilirsiniz. Formik ve Yup kütüphaneleri, form validasyonunu kolaylaştırmak için kullanılmıştır.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## Kullanılan Teknolojiler ve Kütüphaneler:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **@react-navigation/native**: Uygulamanın ekran geçişlerini yönetmek için kullanıldı.
+- **@react-navigation/native-stack**: Stack navigasyonu için kullanıldı.
+- **@reduxjs/toolkit**: Redux store yönetimi için kullanıldı.
+- **axios**: API istekleri için kullanıldı.
+- **formik**: Form oluşturma ve validasyon süreçlerini yönetmek için kullanıldı.
+- **yup**: Form validasyon süreçlerini daha güvenilir hale getirmek için kullanıldı.
+- **iconsax-react-native**: Uygulama içindeki ikonların kullanımı için kullanıldı.
+- **react**: React kütüphanesi.
+- **react-native**: Mobil uygulama geliştirmesi için temel kütüphane.
+- **react-native-safe-area-context**: Safe Area kullanımı için.
+- **react-native-screens**: Uygulama optimizasyonları için.
+- **react-native-svg**: SVG grafik desteği için.
+- **react-redux**: Redux bağlantısı için.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---
 
-```bash
-# using npm
-npm start
+## Kullanıcı İşlemleri:
 
-# OR using Yarn
-yarn start
-```
+- **Kullanıcı Listesi**: Redux kullanarak, API'den alınan kullanıcı verileri listelendi.
+- **Kullanıcı Detay Sayfası**: Belirli bir kullanıcıyı görüntülemek için detay sayfası oluşturuldu.
+- **Kullanıcı Silme**: Kullanıcıyı silebilmek için Redux kullanılarak ilgili eylemler tanımlandı.
+- **Kullanıcı Düzenleme**: Formik ve Yup ile kullanıcı verilerini düzenlendi.
+- **Yeni Kullanıcı Ekleme**: Formik ve Yup ile kullanıcı girişlerini doğrulayan bir form aracılığıyla yeni kullanıcı eklenebilir.
 
-## Step 2: Start your Application
+User Management Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+This project is a user management system developed using **React Native**. You can perform essential CRUD (Create, Read, Update, Delete) operations such as listing users, viewing user details, deleting users, editing user information, and adding new users. Formik and Yup libraries have been used to simplify form validation.
 
-### For Android
+Technologies and Libraries Used
 
-```bash
-# using npm
-npm run android
+- **@react-navigation/native**: Used to manage screen transitions within the app.
+- **@react-navigation/native-stack**: Used for stack navigation.
+- **@reduxjs/toolkit**: Used for managing the Redux store.
+- **axios**: Used for API requests.
+- **formik**: Used to manage form creation and validation processes.
+- **yup**: Used to make form validation more reliable.
+- **iconsax-react-native**: Used for icons within the app.
+- **react**: React library.
+- **react-native**: Core library for mobile app development.
+- **react-native-safe-area-context**: Used for managing safe areas.
+- **react-native-screens**: Used for app optimizations.
+- **react-native-svg**: Used for SVG graphic support.
+- **react-redux**: Used to connect Redux.
 
-# OR using Yarn
-yarn android
-```
+  User Operations:
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+  User List: Used Redux to display user data retrieved from the API.
+  User Details Page: Created a detail page to view specific user information.
+  User Deletion: Defined related actions to delete users using Redux.
+  User Editing: Edited user data using Formik and Yup.
+  Add New User: Added new users through a form that validates user input using Formik and Yup.
+# userLIST-react-native
