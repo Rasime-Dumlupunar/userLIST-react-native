@@ -1,4 +1,4 @@
-Kullanıcı Yönetim Uygulaması
+# Kullanıcı Yönetim Uygulaması
 
 Bu proje, **React Native** kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Kullanıcı listesi, detay sayfaları, kullanıcı silme ve düzenleme işlemleri ile yeni kullanıcı ekleme işlemleri gibi temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirebilirsiniz. Formik ve Yup kütüphaneleri, form validasyonunu kolaylaştırmak için kullanılmıştır.
 
@@ -57,4 +57,5 @@ Technologies and Libraries Used
   User Deletion: Defined related actions to delete users using Redux.
   User Editing: Edited user data using Formik and Yup.
   Add New User: Added new users through a form that validates user input using Formik and Yup.
-# userLIST-react-native
+
+![](https://github.com/Rasime-Dumlupunar/userLIST-react-native/blob/main/userlist.gif)
